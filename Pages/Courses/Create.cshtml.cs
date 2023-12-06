@@ -21,7 +21,7 @@ namespace Szkolenia.Pages.Courses
 
         public IActionResult OnGet()
         {
-        ViewData["TrainerId"] = new SelectList(_context.Set<Trainer>(), "TrainerId", "TrainerId");
+        ViewData["TrainerId"] = new SelectList(_context.Set<Trainer>(), "TrainerId", "Name");
             return Page();
         }
 
